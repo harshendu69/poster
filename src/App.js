@@ -27,17 +27,17 @@ function App() {
       <PayPalScriptProvider  options={{ "client-id": process.env.REACT_APP_PAYPAL_CLIENT_ID }}>
       <div className="App main-content" style={{margin:"0px",padding:"0px"}}>
         <Routes>
-          <Route path="/poster" element={<Home />} />
-          <Route path="/poster/home" elements={<Home />} />
-          <Route path="/poster/custom" element={<Custom />} />
-          <Route path="/poster/developer" element={<Developer />} />
-          <Route path="/poster/profile" element={<Profile />} />
-          <Route path="/poster/car" element={<Car/>}/>
-          <Route path="/poster/modern" element={<Modern/>}/>
-          <Route path="/poster/abstract" element={<Abstract/>}/>
-          <Route path="/poster/office" element={<Office/>}/>
-          <Route path="/poster/relaxing" element={<Relaxing/>}/>
-          <Route path="/poster/enlarged-image/:imageUrl" element={<EnlargedImagePage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/home" elements={<Home />} />
+          <Route path="/custom" element={<Custom />} />
+          <Route path="/developer" element={<Developer />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/car" element={<Car/>}/>
+          <Route path="/modern" element={<Modern/>}/>
+          <Route path="/abstract" element={<Abstract/>}/>
+          <Route path="/office" element={<Office/>}/>
+          <Route path="/relaxing" element={<Relaxing/>}/>
+          <Route path="/enlarged-image/:imageUrl" element={<EnlargedImagePage />} />
         </Routes>
         
       </div>
