@@ -27,8 +27,8 @@ function App() {
       <PayPalScriptProvider  options={{ "client-id": process.env.REACT_APP_PAYPAL_CLIENT_ID }}>
       <div className="App main-content" style={{margin:"0px",padding:"0px"}}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" elements={<Home />} />
+          <Route path="/poster" element={<Home />} />
+          <Route path="/poster/home" elements={<Home />} />
           <Route path="/custom" element={<Custom />} />
           <Route path="/developer" element={<Developer />} />
           <Route path="/profile" element={<Profile />} />
